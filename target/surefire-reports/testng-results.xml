@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="21598" started-at="2019-10-23T15:22:23Z" finished-at="2019-10-23T15:22:45Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="21598" started-at="2019-10-23T15:22:23Z" finished-at="2019-10-23T15:22:45Z">
+      <class name="bjss.shorttechtest.testframework.UITest">
+        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="classLevelSetup" is-config="true" duration-ms="14" started-at="2019-10-23T16:22:23Z" finished-at="2019-10-23T16:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelSetup -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="methodLevelSetup" is-config="true" duration-ms="5732" started-at="2019-10-23T16:22:23Z" finished-at="2019-10-23T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="verifyButtonIDsChangeAfterClickingRedButton()[pri:1, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="verifyButtonIDsChangeAfterClickingRedButton" duration-ms="1519" started-at="2019-10-23T16:22:29Z" description="Confirm that the blue, red and green button ids change after the red button is clicked" finished-at="2019-10-23T16:22:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyButtonIDsChangeAfterClickingRedButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="tearDown" is-config="true" duration-ms="452" started-at="2019-10-23T16:22:30Z" finished-at="2019-10-23T16:22:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="methodLevelSetup" is-config="true" duration-ms="4172" started-at="2019-10-23T16:22:31Z" finished-at="2019-10-23T16:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="verifyTheHelloWorldMessageDisplayAfterRender()[pri:2, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="verifyTheHelloWorldMessageDisplayAfterRender" duration-ms="6225" started-at="2019-10-23T16:22:35Z" finished-at="2019-10-23T16:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHelloWorldMessageDisplayAfterRender -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="tearDown" is-config="true" duration-ms="383" started-at="2019-10-23T16:22:41Z" finished-at="2019-10-23T16:22:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bjss.shorttechtest.testframework.UITest -->
+      <class name="bjss.shorttechtest.testframework.APITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="setUp" is-config="true" duration-ms="985" started-at="2019-10-23T16:22:42Z" finished-at="2019-10-23T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createUser()[pri:3, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="createUser" duration-ms="2095" started-at="2019-10-23T16:22:43Z" description="Create a user and verify a successful response" finished-at="2019-10-23T16:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+      </class> <!-- bjss.shorttechtest.testframework.APITest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

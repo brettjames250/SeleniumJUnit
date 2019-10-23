@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pax2Pay QA Reqression" verbose="1">
+    <test name="Smoke Tests" preserve-order="true">
+        <!-- Tests to run -->
+        <classes>
+            <class name="bjss.shorttechtest.testframework.UITest"/>
+            <class name="bjss.shorttechtest.testframework.APITest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
