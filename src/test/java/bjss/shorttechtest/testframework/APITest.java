@@ -1,12 +1,12 @@
 package bjss.shorttechtest.testframework;
 
 import bjss.shorttechtest.testframework.pageobjects.APITestBase;
-import bjss.shorttechtest.testframework.reportutils.ExtentTestManager;
 import bjss.shorttechtest.testframework.reportutils.TestListener;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import static io.restassured.RestAssured.given;
 
 @Listeners({TestListener.class})

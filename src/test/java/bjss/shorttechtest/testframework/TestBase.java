@@ -5,8 +5,9 @@ import bjss.shorttechtest.testframework.pageobjects.DynamicLoading;
 import bjss.shorttechtest.testframework.pageobjects.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 
 public class TestBase {
