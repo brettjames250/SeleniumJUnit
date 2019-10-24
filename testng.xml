@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Pax2Pay QA Reqression" verbose="1">
-    <test name="Smoke Tests" preserve-order="true">
-        <!-- Tests to run -->
+<suite name="Automation Tests" verbose="1">
+    <listeners>
+        <listener class-name="bjss.shorttechtest.testframework.reportutils.TestListener"/>
+    </listeners>
+    <test name="UI Tests" preserve-order="true">
         <classes>
             <class name="bjss.shorttechtest.testframework.UITest"/>
+        </classes>
+    </test>
+    <test name="API Tests" preserve-order="true">
+        <classes>
             <class name="bjss.shorttechtest.testframework.APITest"/>
         </classes>
-    </test> <!-- Test -->
+    </test>
 </suite> <!-- Suite -->

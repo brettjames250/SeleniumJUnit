@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 
 public class APITestBase {
 
-    public static ResponseSpecification responseSpec;
+    public static ResponseSpecification checkStatusCode;
     public static RequestSpecification requestSpec;
 
     @BeforeClass
@@ -28,7 +28,7 @@ public class APITestBase {
                 setContentType(ContentType.JSON).
                 build();
 
-        responseSpec = new ResponseSpecBuilder().
+        checkStatusCode = new ResponseSpecBuilder().
                 expectStatusCode(200).
                 build();
 
@@ -41,7 +41,7 @@ public class APITestBase {
                 .spec(requestSpec)
                 .when()
                 .get(resource)
-                .then().spec(responseSpec)
+                .then().spec(checkStatusCode)
                 .extract()
                 .response();
     }
@@ -51,7 +51,7 @@ public class APITestBase {
                 .spec(requestSpec)
                 .when()
                 .delete(resource)
-                .then().spec(responseSpec)
+                .then().spec(checkStatusCode)
                 .extract()
                 .response();
 

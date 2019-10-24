@@ -21,11 +21,17 @@ public class TestBase {
     @BeforeClass
     public void classLevelSetup() {
 
+        String os = System.getProperty("os.name").toLowerCase();
 
-        String path = System.getProperty("user.dir");
-        System.out.println(path);
-        System.setProperty("webdriver.chrome.driver", path + "\\src\\main\\java\\drivers\\chromedriver.exe");
+        if (os.contains("mac")) {
 
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver");
+
+        } else {
+
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
+
+        }
 
     }
 

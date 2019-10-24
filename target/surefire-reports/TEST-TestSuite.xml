@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestSuite" time="9.505" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="TestSuite" time="11.959" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -65,7 +65,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyButtonIDsChangeAfterClickingRedButton" time="1.186"/>
-  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyTheHelloWorldMessageDisplayAfterRender" time="6.225"/>
-  <testcase classname="bjss.shorttechtest.testframework.APITest" name="createUser" time="2.094"/>
+  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyButtonIDsChangeAfterClickingRedButton" time="1.441"/>
+  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyTheHelloWorldMessageDisplayAfterRender" time="6.39"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="createUserThroughAPI" time="2.51"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveAllEmployees" time="0.565"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveCreatedEmployee" time="0.529"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="deleteCreatedEmployee" time="0.524"/>
 </testsuite>

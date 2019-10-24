@@ -24,8 +24,10 @@ public class APITest extends APITestBase {
         user.setAge("23");
 
         Response createdUser =
-                given().spec(requestSpec).body(user).when().post(Resources.createResource()).
-                        then().statusCode(200).extract().response();
+
+                given().spec(requestSpec).body(user).
+                        when().post(Resources.createResource()).
+                        then().assertThat().spec(checkStatusCode).extract().response();
 
         String responseString = createdUser.asString();
         JsonPath js = new JsonPath(responseString);
