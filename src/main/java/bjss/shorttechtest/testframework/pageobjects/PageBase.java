@@ -1,8 +1,7 @@
 package bjss.shorttechtest.testframework.pageobjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,8 +29,15 @@ class PageBase {
     }
 
 
-    void click(By locator) {
+    protected void click(By locator) {
         find(locator).click();
+    }
+
+    protected void rightClick(By locator) {
+
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = find(locator);
+        actions.contextClick(elementLocator).perform();
     }
 
     Boolean waitForIsDisplayed(By locator, Integer... timeout) {
@@ -44,5 +50,6 @@ class PageBase {
         }
         return true;
     }
+
 
 }

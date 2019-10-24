@@ -1,4 +1,4 @@
-package bjss.shorttechtest.testframework.pageobjects;
+package bjss.shorttechtest.testframework;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 
 public class APITestBase {
 
-    protected static ResponseSpecification checkStatusCode;
+    static ResponseSpecification checkStatusCode;
     protected static RequestSpecification requestSpec;
 
     @BeforeClass

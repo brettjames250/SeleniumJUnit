@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="bjss.shorttechtest.testframework.UITest" hash-for-method="acceptMessageAfterTrigger">acceptMessageAfterTrigger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="bjss.shorttechtest.testframework.APITest" hash-for-method="createUserThroughAPI">createUserThroughAPI</a> <!-- method navigator-link -->
@@ -148,6 +153,15 @@
               <span class="class-name">bjss.shorttechtest.testframework.UITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptMessageAfterTrigger">
+                  </a> <!-- acceptMessageAfterTrigger -->
+                  <span class="method-name">acceptMessageAfterTrigger</span>
+                  <em>
+(Accept alert after trigger)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyButtonIDsChangeAfterClick">
@@ -266,36 +280,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTheHelloWorldMessageDisplay')
 data.setCell(0, 2, 'bjss.shorttechtest.testframework.UITest')
-data.setCell(0, 3, 6344);
+data.setCell(0, 3, 6503);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createUserThroughAPI')
 data.setCell(1, 2, 'bjss.shorttechtest.testframework.APITest')
-data.setCell(1, 3, 2305);
+data.setCell(1, 3, 2645);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyButtonIDsChangeAfterClick')
 data.setCell(2, 2, 'bjss.shorttechtest.testframework.UITest')
-data.setCell(2, 3, 1491);
+data.setCell(2, 3, 1216);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'retrieveCreatedEmployee')
+data.setCell(3, 1, 'deleteCreatedEmployee')
 data.setCell(3, 2, 'bjss.shorttechtest.testframework.APITest')
-data.setCell(3, 3, 615);
+data.setCell(3, 3, 857);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'retrieveAllEmployees')
 data.setCell(4, 2, 'bjss.shorttechtest.testframework.APITest')
-data.setCell(4, 3, 547);
+data.setCell(4, 3, 838);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteCreatedEmployee')
+data.setCell(5, 1, 'retrieveCreatedEmployee')
 data.setCell(5, 2, 'bjss.shorttechtest.testframework.APITest')
-data.setCell(5, 3, 477);
+data.setCell(5, 3, 786);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'acceptMessageAfterTrigger')
+data.setCell(6, 2, 'bjss.shorttechtest.testframework.UITest')
+data.setCell(6, 3, 567);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -332,46 +350,58 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyButtonIDsChangeAfterClick</span>
-                <span class="method-start">7395 ms</span>
+                <span class="method-start">5688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8888 ms</span>
+                <span class="method-start">6906 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">methodLevelSetup</span>
-                <span class="method-start">9450 ms</span>
+                <span class="method-start">7189 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheHelloWorldMessageDisplay</span>
-                <span class="method-start">13563 ms</span>
+                <span class="method-start">14519 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19907 ms</span>
+                <span class="method-start">21022 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetup</span>
+                <span class="method-start">21266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acceptMessageAfterTrigger</span>
+                <span class="method-start">25694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26262 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">bjss.shorttechtest.testframework.APITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20253 ms</span>
+                <span class="method-start">26470 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createUserThroughAPI</span>
-                <span class="method-start">21245 ms</span>
+                <span class="method-start">27401 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">retrieveAllEmployees</span>
-                <span class="method-start">23558 ms</span>
+                <span class="method-start">30046 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">retrieveCreatedEmployee</span>
-                <span class="method-start">24105 ms</span>
+                <span class="method-start">30885 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteCreatedEmployee</span>
-                <span class="method-start">24721 ms</span>
+                <span class="method-start">31672 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

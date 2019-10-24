@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="TestSuite" time="11.477" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="TestSuite" time="13.2" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -65,10 +65,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyButtonIDsChangeAfterClick" time="1.215"/>
-  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyTheHelloWorldMessageDisplay" time="6.344"/>
-  <testcase classname="bjss.shorttechtest.testframework.APITest" name="createUserThroughAPI" time="2.302"/>
-  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveAllEmployees" time="0.546"/>
-  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveCreatedEmployee" time="0.593"/>
-  <testcase classname="bjss.shorttechtest.testframework.APITest" name="deleteCreatedEmployee" time="0.477"/>
+  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyButtonIDsChangeAfterClick" time="1.007"/>
+  <testcase classname="bjss.shorttechtest.testframework.UITest" name="verifyTheHelloWorldMessageDisplay" time="6.5"/>
+  <testcase classname="bjss.shorttechtest.testframework.UITest" name="acceptMessageAfterTrigger" time="0.567"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="createUserThroughAPI" time="2.644"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveAllEmployees" time="0.839"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="retrieveCreatedEmployee" time="0.786"/>
+  <testcase classname="bjss.shorttechtest.testframework.APITest" name="deleteCreatedEmployee" time="0.857"/>
 </testsuite>

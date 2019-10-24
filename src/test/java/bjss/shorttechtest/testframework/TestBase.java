@@ -1,7 +1,8 @@
 package bjss.shorttechtest.testframework;
 
 import bjss.shorttechtest.testframework.pageobjects.ChallengingDOMPage;
-import bjss.shorttechtest.testframework.pageobjects.DynamicLoading;
+import bjss.shorttechtest.testframework.pageobjects.ContextMenuPage;
+import bjss.shorttechtest.testframework.pageobjects.DynamicLoadingPage;
 import bjss.shorttechtest.testframework.pageobjects.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +16,8 @@ public class TestBase {
     protected WebDriver driver;
     HomePage homePage;
     ChallengingDOMPage challengingDOMPage;
-    DynamicLoading dynamicLoading;
+    DynamicLoadingPage dynamicLoading;
+    ContextMenuPage contextMenu;
 
 
     @BeforeClass
@@ -44,7 +46,8 @@ public class TestBase {
 
         challengingDOMPage = new ChallengingDOMPage(driver);
         homePage = new HomePage(driver);
-        dynamicLoading = new DynamicLoading(driver);
+        dynamicLoading = new DynamicLoadingPage(driver);
+        contextMenu = new ContextMenuPage(driver);
 
 
     }

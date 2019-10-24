@@ -1,6 +1,5 @@
 package bjss.shorttechtest.testframework;
 
-import bjss.shorttechtest.testframework.pageobjects.APITestBase;
 import bjss.shorttechtest.testframework.reportutils.TestListener;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -14,7 +13,7 @@ public class APITest extends APITestBase {
 
     private String userId;
 
-    @Test(priority = 3, description = "Create a user and verify a successful response")
+    @Test(priority = 4, description = "Create a user and verify a successful response")
     public void createUserThroughAPI() {
 
         User user = new User()
@@ -35,7 +34,7 @@ public class APITest extends APITestBase {
 
     }
 
-    @Test(priority = 4, description = "Get all employee data")
+    @Test(priority = 5, description = "Get all employee data")
     public void retrieveAllEmployees() {
 
         simpleGetTest("/employees");
@@ -43,7 +42,7 @@ public class APITest extends APITestBase {
 
     }
 
-    @Test(priority = 5, description = "Get a single employee data")
+    @Test(priority = 6, description = "Get a single employee data")
     public void retrieveCreatedEmployee() {
 
         simpleGetTest("/employee/" + userId);
@@ -51,7 +50,7 @@ public class APITest extends APITestBase {
 
     }
 
-    @Test(priority = 6, description = "Delete an employee record")
+    @Test(priority = 7, description = "Delete an employee record")
     public void deleteCreatedEmployee() {
 
         simpleDeleteTest("/delete/" + userId);

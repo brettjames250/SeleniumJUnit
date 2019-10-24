@@ -4,16 +4,16 @@ package bjss.shorttechtest.testframework.pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class DynamicLoading extends PageBase {
+public class DynamicLoadingPage extends PageBase {
 
 
 
     private final By helloWorldMessage = By.xpath("//div[@id='finish']");
     private final By startButton = By.xpath("//button[contains(text(),'Start')]");
-    final By example2 = By.linkText("Example 2: Element rendered after the fact");
-    final By pageTitle = By.xpath("//h4[contains(text(),'Example 2: Element rendered after the fact')]");
+    private final By example2 = By.linkText("Example 2: Element rendered after the fact");
+    private final By pageTitle = By.xpath("//h4[contains(text(),'Example 2: Element rendered after the fact')]");
 
-    public DynamicLoading(WebDriver driver) {
+    public DynamicLoadingPage(WebDriver driver) {
         super(driver);
     }
 

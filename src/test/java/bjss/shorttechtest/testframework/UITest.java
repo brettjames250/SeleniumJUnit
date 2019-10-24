@@ -25,12 +25,23 @@ public class UITest extends TestBase {
     }
 
     @Test(priority = 2, description = "Confirm 'Hello World!' is rendered after the fact")
-    public void verifyTheHelloWorldMessageDisplay() {
+    public void verifyHelloWorldMessageDisplay() {
 
 
         homePage.clickDynamicLoading();
         dynamicLoading.generateElement();
         dynamicLoading.verifyHelloWorld();
+
+
+    }
+
+    @Test(priority = 3, description = "Accept alert after trigger, then verify no further alerts are present")
+    public void acceptMessageAfterTrigger() {
+
+        homePage.clickContextMenu();
+        contextMenu.rightClickHotSpot();
+        contextMenu.waitForAlertAndClick();
+        assertThat(contextMenu.isAlertPresent(), equalTo(false));
 
 
     }
