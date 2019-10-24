@@ -8,10 +8,10 @@ public class DynamicLoading extends PageBase {
 
 
 
-    By helloWorldMessage = By.xpath("//div[@id='finish']");
-    By startButton = By.xpath("//button[contains(text(),'Start')]");
-    By example2 = By.linkText("Example 2: Element rendered after the fact");
-    By pageTitle = By.xpath("//h4[contains(text(),'Example 2: Element rendered after the fact')]");
+    private final By helloWorldMessage = By.xpath("//div[@id='finish']");
+    private final By startButton = By.xpath("//button[contains(text(),'Start')]");
+    final By example2 = By.linkText("Example 2: Element rendered after the fact");
+    final By pageTitle = By.xpath("//h4[contains(text(),'Example 2: Element rendered after the fact')]");
 
     public DynamicLoading(WebDriver driver) {
         super(driver);
@@ -24,9 +24,9 @@ public class DynamicLoading extends PageBase {
         click(startButton);
     }
 
-    public Boolean verifyHelloWorld() {
+    public void verifyHelloWorld() {
 
-        return waitForIsDisplayed(helloWorldMessage, 15);
+        waitForIsDisplayed(helloWorldMessage);
     }
 
 

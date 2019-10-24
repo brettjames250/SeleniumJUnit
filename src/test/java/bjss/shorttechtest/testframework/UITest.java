@@ -4,27 +4,31 @@ import bjss.shorttechtest.testframework.reportutils.TestListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({ TestListener.class })
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+
+@Listeners({TestListener.class})
 public class UITest extends TestBase {
 
 
-    @Test(priority = 1 ,description = "Confirm that the blue, red and green button ids change after the red button is clicked")
-    public void verifyButtonIDsChangeAfterClickingRedButton() {
+    @Test(priority = 1, description = "Confirm that the blue, red and green button ids change after the red button is clicked")
+    public void verifyButtonIDsChangeAfterClick() {
 
 
-        objHomePage.clickChallengingDOM();
-        objChallengingDOMPage.getInitialButtonIDs();
-        objChallengingDOMPage.clickRedButton();
-        objChallengingDOMPage.checkForIDChange();
+        homePage.clickChallengingDOM();
+        challengingDOMPage.locateButtonIDs();
+        challengingDOMPage.clickRedButton();
+        assertThat(challengingDOMPage.getButtonIds(), not(equalTo(challengingDOMPage.getUpdatedButtonIDs())));
 
 
     }
 
     @Test(priority = 2, description = "Confirm 'Hello World!' is rendered after the fact")
-    public void verifyTheHelloWorldMessageDisplayAfterRender() {
+    public void verifyTheHelloWorldMessageDisplay() {
 
 
-        objHomePage.clickDynamicLoading();
+        homePage.clickDynamicLoading();
         dynamicLoading.generateElement();
         dynamicLoading.verifyHelloWorld();
 

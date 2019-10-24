@@ -7,11 +7,12 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ChallengingDOMPage extends PageBase {
 
 
-    List<String> initialButtonIDs;
-    By redButton = By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]");
+    private List<String> initialButtonIDs;
+    private final By redButton = By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]");
 
     public ChallengingDOMPage(WebDriver driver) {
         super(driver);
@@ -22,7 +23,7 @@ public class ChallengingDOMPage extends PageBase {
         click(redButton);
     }
 
-    public List getInitialButtonIDs() {
+    public void locateButtonIDs() {
 
         List<WebElement> initialButtonElements = driver.findElements(By.xpath("//*[contains(@class, 'button')]"));
 
@@ -31,22 +32,27 @@ public class ChallengingDOMPage extends PageBase {
             initialButtonIDs.add(e.getAttribute("id"));
         }
 
+    }
+
+    public List getButtonIds() {
         return initialButtonIDs;
     }
 
 
-    public void checkForIDChange() {
+    public List getUpdatedButtonIDs() {
 
         List<WebElement> afterButtonElements = driver.findElements(By.xpath("//*[contains(@class, 'button')]"));
+
 
         List<String> afterButtonIDs = new ArrayList<>();
         for (WebElement e : afterButtonElements) {
             afterButtonIDs.add(e.getAttribute("id"));
         }
 
-        System.out.println(afterButtonIDs);
-
-        tryAssertNotEquals(initialButtonIDs, afterButtonIDs);
+        return afterButtonIDs;
 
     }
+
+
 }
+

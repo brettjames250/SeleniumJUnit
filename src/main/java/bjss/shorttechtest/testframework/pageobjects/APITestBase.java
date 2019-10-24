@@ -4,7 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
@@ -15,8 +14,8 @@ import static io.restassured.RestAssured.given;
 
 public class APITestBase {
 
-    public static ResponseSpecification checkStatusCode;
-    public static RequestSpecification requestSpec;
+    protected static ResponseSpecification checkStatusCode;
+    protected static RequestSpecification requestSpec;
 
     @BeforeClass
     public void setUp()  {
@@ -36,8 +35,8 @@ public class APITestBase {
     }
 
 
-    protected Response simpleGetTest(String resource) {
-        return given()
+    protected void simpleGetTest(String resource) {
+        given()
                 .spec(requestSpec)
                 .when()
                 .get(resource)
@@ -46,15 +45,14 @@ public class APITestBase {
                 .response();
     }
 
-    protected Response simpleDeleteTest(String resource) {
-        return given()
+    protected void simpleDeleteTest(String resource) {
+        given()
                 .spec(requestSpec)
                 .when()
                 .delete(resource)
                 .then().spec(checkStatusCode)
                 .extract()
                 .response();
-
 
 
     }
@@ -68,8 +66,7 @@ public class APITestBase {
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-        String nameString = salt.toString();
-        return nameString;
+        return salt.toString();
 
     }
 }

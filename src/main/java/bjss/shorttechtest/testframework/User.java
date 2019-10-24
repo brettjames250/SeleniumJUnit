@@ -1,20 +1,23 @@
 package bjss.shorttechtest.testframework;
 
-public class User {
+class User {
 
     private String name;
     private String salary;
     private String age;
 
-    public void setName(String name) {
+    public User setName(String name) {
         this.name = name;
+        return this;
     }
 
-    public void setSalary(String salary) {
+    public User setSalary(String salary) {
         this.salary = salary;
+        return this;
     }
 
-    public void setAge(String age) {
+    public User setAge(String age) {
         this.age = age;
+        return this;
     }
 }

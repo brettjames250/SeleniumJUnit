@@ -17,16 +17,15 @@ public class APITest extends APITestBase {
     @Test(priority = 3, description = "Create a user and verify a successful response")
     public void createUserThroughAPI() {
 
-
-        User user = new User();
-        user.setName("Test" + getRandomString());
-        user.setSalary("123");
-        user.setAge("23");
+        User user = new User()
+                .setName("Test" + getRandomString())
+                .setSalary("123")
+                .setAge("23");
 
         Response createdUser =
 
                 given().spec(requestSpec).body(user).
-                        when().post(Resources.createResource()).
+                        when().post("/create").
                         then().assertThat().spec(checkStatusCode).extract().response();
 
         String responseString = createdUser.asString();
@@ -34,13 +33,12 @@ public class APITest extends APITestBase {
         userId = js.get("id");
 
 
-
     }
 
     @Test(priority = 4, description = "Get all employee data")
     public void retrieveAllEmployees() {
 
-        simpleGetTest(Resources.employee()+ "s");
+        simpleGetTest("/employees");
 
 
     }
@@ -48,7 +46,7 @@ public class APITest extends APITestBase {
     @Test(priority = 5, description = "Get a single employee data")
     public void retrieveCreatedEmployee() {
 
-        simpleGetTest(Resources.employee()+ "/" + userId);
+        simpleGetTest("/employee/" + userId);
 
 
     }
@@ -56,7 +54,7 @@ public class APITest extends APITestBase {
     @Test(priority = 6, description = "Delete an employee record")
     public void deleteCreatedEmployee() {
 
-        simpleDeleteTest(Resources.deleteResource() + userId);
+        simpleDeleteTest("/delete/" + userId);
 
 
     }

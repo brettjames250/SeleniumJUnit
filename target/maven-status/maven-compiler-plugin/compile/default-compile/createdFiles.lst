@@ -1,8 +1,6 @@
-bjss\shorttechtest\testframework\Payload.class
 bjss\shorttechtest\testframework\pageobjects\ChallengingDOMPage.class
 bjss\shorttechtest\testframework\pageobjects\DynamicLoading.class
 bjss\shorttechtest\testframework\User.class
 bjss\shorttechtest\testframework\pageobjects\APITestBase.class
-bjss\shorttechtest\testframework\pageobjects\PageBase.class
-bjss\shorttechtest\testframework\Resources.class
 bjss\shorttechtest\testframework\pageobjects\HomePage.class
+bjss\shorttechtest\testframework\pageobjects\PageBase.class

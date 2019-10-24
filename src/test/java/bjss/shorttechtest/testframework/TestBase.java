@@ -12,10 +12,10 @@ import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 
-    public WebDriver driver;
-    public HomePage objHomePage;
-    public ChallengingDOMPage objChallengingDOMPage;
-    public DynamicLoading dynamicLoading;
+    protected WebDriver driver;
+    HomePage homePage;
+    ChallengingDOMPage challengingDOMPage;
+    DynamicLoading dynamicLoading;
 
 
     @BeforeClass
@@ -42,8 +42,8 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
 
-        objChallengingDOMPage = new ChallengingDOMPage(driver);
-        objHomePage = new HomePage(driver);
+        challengingDOMPage = new ChallengingDOMPage(driver);
+        homePage = new HomePage(driver);
         dynamicLoading = new DynamicLoading(driver);
 
 

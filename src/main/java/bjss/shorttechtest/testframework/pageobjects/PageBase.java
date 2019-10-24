@@ -6,19 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-import java.net.MalformedURLException;
-import java.util.List;
 
-public class PageBase {
+class PageBase {
 
-    public WebDriver driver;
-    public WebDriverWait wait;
+    final WebDriver driver;
+    WebDriverWait wait;
 
-    public PageBase(WebDriver driver) {
+    PageBase(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,20);
+        wait = new WebDriverWait(driver, 20);
     }
 
     private void waitFor(ExpectedCondition<WebElement> condition, Integer timeout) {
@@ -26,35 +23,18 @@ public class PageBase {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.until(condition);
     }
-    public void tryAssertNotEquals(List initialValue, List afterValue){
-
-        Assert.assertNotEquals(afterValue, initialValue);
-
-    }
 
 
-    public void visit(String url) {
-        {
-            driver.get(url);
-
-
-        }
-    }
-
-    protected void navigateTo(String url) throws MalformedURLException {
-        driver.navigate().to(url);
-    }
-
-    protected WebElement find(By locator) {
+    private WebElement find(By locator) {
         return driver.findElement(locator);
     }
 
 
-    protected void click(By locator) {
+    void click(By locator) {
         find(locator).click();
     }
 
-    protected Boolean waitForIsDisplayed(By locator, Integer... timeout) {
+    Boolean waitForIsDisplayed(By locator, Integer... timeout) {
         try {
             waitFor(ExpectedConditions.visibilityOfElementLocated(locator),
                     (timeout.length > 0 ? timeout[0] : null));
@@ -65,15 +45,4 @@ public class PageBase {
         return true;
     }
 
-
-
-    protected Boolean waitForIsClickable(By locator, Integer... timeout) {
-        try {
-            waitFor(ExpectedConditions.elementToBeClickable(locator),
-                    (timeout.length > 0 ? timeout[0] : null));
-        } catch (org.openqa.selenium.TimeoutException exception) {
-            return false;
-        }
-        return true;
-    }
 }

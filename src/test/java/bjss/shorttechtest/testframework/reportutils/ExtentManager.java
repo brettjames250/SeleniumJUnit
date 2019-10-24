@@ -2,7 +2,7 @@ package bjss.shorttechtest.testframework.reportutils;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
-public class ExtentManager {
+class ExtentManager {
 
     private static ExtentReports extent;
 

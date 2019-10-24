@@ -2,58 +2,58 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="25423" started-at="2019-10-24T08:32:59Z" finished-at="2019-10-24T08:33:24Z">
+  <suite name="Command line suite" duration-ms="25210" started-at="2019-10-24T13:08:21Z" finished-at="2019-10-24T13:08:46Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="25423" started-at="2019-10-24T08:32:59Z" finished-at="2019-10-24T08:33:24Z">
+    <test name="Command line test" duration-ms="25210" started-at="2019-10-24T13:08:21Z" finished-at="2019-10-24T13:08:46Z">
       <class name="bjss.shorttechtest.testframework.UITest">
-        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="classLevelSetup" is-config="true" duration-ms="15" started-at="2019-10-24T09:32:59Z" finished-at="2019-10-24T09:32:59Z">
+        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="classLevelSetup" is-config="true" duration-ms="19" started-at="2019-10-24T14:08:21Z" finished-at="2019-10-24T14:08:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classLevelSetup -->
-        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="methodLevelSetup" is-config="true" duration-ms="6436" started-at="2019-10-24T09:32:59Z" finished-at="2019-10-24T09:33:05Z">
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="methodLevelSetup" is-config="true" duration-ms="7368" started-at="2019-10-24T14:08:21Z" finished-at="2019-10-24T14:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetup -->
-        <test-method status="PASS" signature="verifyButtonIDsChangeAfterClickingRedButton()[pri:1, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="verifyButtonIDsChangeAfterClickingRedButton" duration-ms="1925" started-at="2019-10-24T09:33:05Z" description="Confirm that the blue, red and green button ids change after the red button is clicked" finished-at="2019-10-24T09:33:07Z">
+        <test-method status="PASS" signature="verifyButtonIDsChangeAfterClick()[pri:1, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="verifyButtonIDsChangeAfterClick" duration-ms="1491" started-at="2019-10-24T14:08:28Z" description="Confirm that the blue, red and green button ids change after the red button is clicked" finished-at="2019-10-24T14:08:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyButtonIDsChangeAfterClickingRedButton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="tearDown" is-config="true" duration-ms="477" started-at="2019-10-24T09:33:07Z" finished-at="2019-10-24T09:33:08Z">
+        </test-method> <!-- verifyButtonIDsChangeAfterClick -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="tearDown" is-config="true" duration-ms="562" started-at="2019-10-24T14:08:29Z" finished-at="2019-10-24T14:08:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="methodLevelSetup" is-config="true" duration-ms="4481" started-at="2019-10-24T09:33:08Z" finished-at="2019-10-24T09:33:12Z">
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="methodLevelSetup" is-config="true" duration-ms="4113" started-at="2019-10-24T14:08:30Z" finished-at="2019-10-24T14:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetup -->
-        <test-method status="PASS" signature="verifyTheHelloWorldMessageDisplayAfterRender()[pri:2, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="verifyTheHelloWorldMessageDisplayAfterRender" duration-ms="6390" started-at="2019-10-24T09:33:12Z" description="Confirm &#039;Hello World!&#039; is rendered after the fact" finished-at="2019-10-24T09:33:18Z">
+        <test-method status="PASS" signature="verifyTheHelloWorldMessageDisplay()[pri:2, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="verifyTheHelloWorldMessageDisplay" duration-ms="6344" started-at="2019-10-24T14:08:34Z" description="Confirm &#039;Hello World!&#039; is rendered after the fact" finished-at="2019-10-24T14:08:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheHelloWorldMessageDisplayAfterRender -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@366e2eef]" name="tearDown" is-config="true" duration-ms="438" started-at="2019-10-24T09:33:18Z" finished-at="2019-10-24T09:33:19Z">
+        </test-method> <!-- verifyTheHelloWorldMessageDisplay -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bjss.shorttechtest.testframework.UITest@90f6bfd]" name="tearDown" is-config="true" duration-ms="346" started-at="2019-10-24T14:08:40Z" finished-at="2019-10-24T14:08:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- bjss.shorttechtest.testframework.UITest -->
       <class name="bjss.shorttechtest.testframework.APITest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="setUp" is-config="true" duration-ms="1087" started-at="2019-10-24T09:33:19Z" finished-at="2019-10-24T09:33:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bjss.shorttechtest.testframework.APITest@4157f54e]" name="setUp" is-config="true" duration-ms="992" started-at="2019-10-24T14:08:41Z" finished-at="2019-10-24T14:08:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createUserThroughAPI()[pri:3, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="createUserThroughAPI" duration-ms="2507" started-at="2019-10-24T09:33:20Z" description="Create a user and verify a successful response" finished-at="2019-10-24T09:33:22Z">
+        <test-method status="PASS" signature="createUserThroughAPI()[pri:3, instance:bjss.shorttechtest.testframework.APITest@4157f54e]" name="createUserThroughAPI" duration-ms="2305" started-at="2019-10-24T14:08:42Z" description="Create a user and verify a successful response" finished-at="2019-10-24T14:08:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserThroughAPI -->
-        <test-method status="PASS" signature="retrieveAllEmployees()[pri:4, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="retrieveAllEmployees" duration-ms="569" started-at="2019-10-24T09:33:22Z" description="Get all employee data" finished-at="2019-10-24T09:33:23Z">
+        <test-method status="PASS" signature="retrieveAllEmployees()[pri:4, instance:bjss.shorttechtest.testframework.APITest@4157f54e]" name="retrieveAllEmployees" duration-ms="547" started-at="2019-10-24T14:08:44Z" description="Get all employee data" finished-at="2019-10-24T14:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- retrieveAllEmployees -->
-        <test-method status="PASS" signature="retrieveCreatedEmployee()[pri:5, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="retrieveCreatedEmployee" duration-ms="525" started-at="2019-10-24T09:33:23Z" description="Get a single employee data" finished-at="2019-10-24T09:33:24Z">
+        <test-method status="PASS" signature="retrieveCreatedEmployee()[pri:5, instance:bjss.shorttechtest.testframework.APITest@4157f54e]" name="retrieveCreatedEmployee" duration-ms="615" started-at="2019-10-24T14:08:45Z" description="Get a single employee data" finished-at="2019-10-24T14:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- retrieveCreatedEmployee -->
-        <test-method status="PASS" signature="deleteCreatedEmployee()[pri:6, instance:bjss.shorttechtest.testframework.APITest@34b7bfc0]" name="deleteCreatedEmployee" duration-ms="527" started-at="2019-10-24T09:33:24Z" description="Delete an employee record" finished-at="2019-10-24T09:33:24Z">
+        <test-method status="PASS" signature="deleteCreatedEmployee()[pri:6, instance:bjss.shorttechtest.testframework.APITest@4157f54e]" name="deleteCreatedEmployee" duration-ms="477" started-at="2019-10-24T14:08:45Z" description="Delete an employee record" finished-at="2019-10-24T14:08:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCreatedEmployee -->

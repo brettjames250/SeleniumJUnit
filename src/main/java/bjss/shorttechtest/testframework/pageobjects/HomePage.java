@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends PageBase {
 
 
-    By challengingDOM = By.linkText("Challenging DOM");
-    By availableExamples = By.xpath("//h2[contains(text(),'Available Examples')]");
-    By dynamicLoading = By.linkText("Dynamic Loading");
+    private final By challengingDOM = By.linkText("Challenging DOM");
+    private final By availableExamples = By.xpath("//h2[contains(text(),'Available Examples')]");
+    private By dynamicLoading = By.linkText("Dynamic Loading");
 
     public HomePage(WebDriver driver) {
         super(driver);

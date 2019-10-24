@@ -6,9 +6,9 @@ import com.relevantcodes.extentreports.ExtentTest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExtentTestManager {
-    static Map extentTestMap = new HashMap();
-    static ExtentReports extent = ExtentManager.getReports();
+class ExtentTestManager {
+    private static final Map extentTestMap = new HashMap();
+    private static final ExtentReports extent = ExtentManager.getReports();
 
     public static synchronized ExtentTest getTest() {
         return (ExtentTest) extentTestMap.get((int) (long) (Thread.currentThread().getId()));
@@ -18,9 +18,8 @@ public class ExtentTestManager {
         extent.endTest((ExtentTest) extentTestMap.get((int) (long) (Thread.currentThread().getId())));
     }
 
-    public static synchronized ExtentTest startTest(String testName, String desc) {
+    public static synchronized void startTest(String testName, String desc) {
         ExtentTest test = extent.startTest(testName, desc);
         extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
-        return test;
     }
 }

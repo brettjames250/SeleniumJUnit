@@ -4,12 +4,12 @@
     <listeners>
         <listener class-name="bjss.shorttechtest.testframework.reportutils.TestListener"/>
     </listeners>
-    <test name="UI Tests" preserve-order="true">
+    <test name="UI Tests">
         <classes>
             <class name="bjss.shorttechtest.testframework.UITest"/>
         </classes>
     </test>
-    <test name="API Tests" preserve-order="true">
+    <test name="API Tests">
         <classes>
             <class name="bjss.shorttechtest.testframework.APITest"/>
         </classes>
