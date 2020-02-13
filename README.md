@@ -1,8 +1,8 @@
-# brettjames-bjss-shorttechtest
+# Selenium and RestAssured Example
 
 ## About
 
-This test automation framework contains both UI and API tests, as part of the SDET Technical Test
+This test automation framework contains both UI and API tests
 
 - Test website - https://the-internet.herokuapp.com/ 
 - REST API - http://dummy.restapiexample.com/ .
